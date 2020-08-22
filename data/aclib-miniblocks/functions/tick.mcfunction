@@ -11,4 +11,4 @@ execute if data block ~ ~ ~ Items[{Slot:20b}].tag.PlaceholderMiniblocks run repl
 execute if data block ~ ~ ~ Items[{Slot:21b}].tag.PlaceholderMiniblocks run replaceitem block ~ ~ ~ container.21 air
 execute if data block ~ ~ ~ Items[{Slot:23b}].tag.PlaceholderMiniblocks run replaceitem block ~ ~ ~ container.23 air
 execute if data block ~ ~ ~ Items[{Slot:25b}].tag.PlaceholderMiniblocks run replaceitem block ~ ~ ~ container.25 air
-execute if block ~ ~ ~ minecraft:barrel{Items:[{Slot:9b,id:"minecraft:stonecutter",tag:{ac_lib:{craftingMode:"miniblocks"}}}]} run function mob-catching:protect_slots
+execute if block ~ ~ ~ minecraft:barrel{Items:[{Slot:9b,id:"minecraft:stonecutter",tag:{ac_lib:{craftingMode:"miniblocks"}}}]} run function aclib-miniblocks:protect_slots
