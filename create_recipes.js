@@ -8,7 +8,7 @@ fs.readFile('data.json', 'utf8', (err, data) => {
   fs.writeFile('compatible.txt', json.map(e => {
     if(e.input == 'minecraft:redstone_lamp') return `${e.input}\nLit redstone lamp (put unlit lamp back in)`
     return e.input
-  }).join('\n'), err => {
+  }).sort().join('\n'), err => {
     if(err) return console.error(err);
   });
 
