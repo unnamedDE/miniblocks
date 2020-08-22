@@ -1,0 +1,1 @@
+kill @e[type=minecraft:item,limit=1,sort=nearest,nbt={Item:{id:"minecraft:stonecutter",Count:1b,tag:{unnamedDE:{NoPlacing:1},ac_lib:{craftingMode:"miniblocks"},display:{Name:'{"text":"Miniblocker","italic":false}',Lore:['{"text":"Cuts blocks into miniblocks","color":"dark_green","italic":false}']}}}}]
