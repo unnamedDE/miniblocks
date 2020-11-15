@@ -12,7 +12,7 @@ fs.readFile('data.json', 'utf8', (err, data) => {
     if(err) return console.error(err);
   });
 
-  const recipesPaths = ["aclib-miniblocks:miniblocks_crafting_mode","aclib-miniblocks:tick","aclib-miniblocks:miniblocks/lit_redstone_lamp"];
+  const recipesPaths = ["aclib-miniblocks:miniblocks_crafting_mode","aclib-miniblocks:miniblocks/lit_redstone_lamp"];
 
   json.forEach(e => {
     fs.writeFile(`./data/aclib-miniblocks/functions/miniblocks/${e.input.replace(/^minecraft:/, '')}.mcfunction`, template.main(e), err => {if(err) console.error(err)});
